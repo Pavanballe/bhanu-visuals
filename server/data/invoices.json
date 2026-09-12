@@ -1,0 +1,42 @@
+[
+  {
+    "id": "INV-1789205731532",
+    "invoiceNo": "BV-INV-2026-0002",
+    "createdAt": "2026-09-12T09:35:31.532Z",
+    "customerId": "BV-C-0001",
+    "bookingId": "BV-B-2026-0001",
+    "type": "Advance",
+    "items": [
+      {
+        "name": "Advance / Booking",
+        "amount": 0
+      }
+    ],
+    "total": 1,
+    "amountDue": 1,
+    "paid": 0,
+    "balance": 1,
+    "status": "Pending",
+    "notes": ""
+  },
+  {
+    "id": "INV-1789205333925",
+    "invoiceNo": "BV-INV-2026-0001",
+    "createdAt": "2026-09-12T09:28:53.925Z",
+    "customerId": "BV-C-0001",
+    "bookingId": "BV-B-2026-0001",
+    "type": "Advance",
+    "items": [
+      {
+        "name": "Advance / Booking",
+        "amount": 0
+      }
+    ],
+    "total": 1,
+    "amountDue": 1,
+    "paid": 0,
+    "balance": 1,
+    "status": "Pending",
+    "notes": ""
+  }
+]

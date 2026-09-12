@@ -1,0 +1,23 @@
+[
+  {
+    "id": "SH-1789201343351",
+    "customerId": "BV-C-0001",
+    "bookingId": "BV-B-2026-0001",
+    "shootDate": "",
+    "location": "",
+    "type": "Pre-Wedding",
+    "status": "Enquiry",
+    "services": [
+      "Candid Photography",
+      "Drone",
+      "Gimbal",
+      "Professional Videography",
+      "Highlight Film",
+      "Extra Reel",
+      "Professional Editing",
+      "Color Grading"
+    ],
+    "notes": "09-11-2026",
+    "createdAt": "2026-09-12T08:22:23.348Z"
+  }
+]

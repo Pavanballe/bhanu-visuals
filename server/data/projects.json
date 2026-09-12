@@ -1,0 +1,5 @@
+[
+  {"id":"demo-1","title":"Sri Ram Sena — Aagman","category":"Special Events","description":"A high-energy cinematic event story built around movement, crowd moments and hero visuals.","image":"https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1400&q=85","video":"","featured":true},
+  {"id":"demo-2","title":"Golden Hour — Couple Story","category":"Pre-Wedding","description":"A warm, intimate visual story with cinematic portraits and movement-driven frames.","image":"https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85","video":"","featured":true},
+  {"id":"demo-3","title":"Brand Motion — Product Film","category":"Brand & Commercial","description":"A premium product-focused reel concept designed for social media conversion.","image":"https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1400&q=85","video":"","featured":false}
+]
