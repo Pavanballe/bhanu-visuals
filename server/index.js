@@ -13,7 +13,7 @@ import QRCode from 'qrcode'
 dotenv.config()
 const __dirname=path.dirname(fileURLToPath(import.meta.url))
 const DATA=path.join(__dirname,'data')
-const PDF_DIR=path.join(__dirname,'generated')
+const PDF_DIR=process.env.VERCEL ? '/tmp/bhanu-visuals-generated' : path.join(__dirname,'generated')
 await fs.mkdir(DATA,{recursive:true}); await fs.mkdir(PDF_DIR,{recursive:true})
 const files={
   projects:path.join(DATA,'projects.json'), enquiries:path.join(DATA,'enquiries.json'),
@@ -266,3 +266,4 @@ export default app
 if (!process.env.VERCEL) {
   app.listen(port,()=>console.log(`Bhanu Visuals API running on http://localhost:${port}`))
 }
+
