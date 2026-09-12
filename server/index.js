@@ -260,3 +260,4 @@ app.put('/api/admin/projects/:id',auth,async(req,res)=>{const items=await read(f
 app.delete('/api/admin/projects/:id',auth,async(req,res)=>{const items=await read(files.projects),next=items.filter(x=>x.id!==req.params.id);if(next.length===items.length)return res.status(404).json({error:'Project not found'});await write(files.projects,next);res.json({ok:true})})
 
 app.listen(port,()=>console.log(`Bhanu Visuals API running on http://localhost:${port}`))
+
