@@ -9,6 +9,7 @@ import jwt from 'jsonwebtoken'
 import nodemailer from 'nodemailer'
 import PDFDocument from 'pdfkit'
 import QRCode from 'qrcode'
+import { readTable, writeTable, upsertTableRow, deleteTableRow } from './db.js'
 
 dotenv.config()
 const __dirname=path.dirname(fileURLToPath(import.meta.url))
@@ -26,8 +27,8 @@ for(const [k,f] of Object.entries(files)){
 }
 const app=express(); app.use(cors()); app.use(express.json({limit:'5mb'}))
 const port=process.env.PORT||4000
-const read=async f=>JSON.parse(await fs.readFile(f,'utf8'))
-const write=async(f,d)=>fs.writeFile(f,JSON.stringify(d,null,2))
+const read=async f=>readTable(path.basename(f,'.json'))
+const write=async(f,d)=>writeTable(path.basename(f,'.json'),d)
 const nextNumber=(items,prefix)=>`${prefix}${String(items.length+1).padStart(4,'0')}`
 const safePhone=v=>String(v||'').replace(/\D/g,'')
 
@@ -266,4 +267,5 @@ export default app
 if (!process.env.VERCEL) {
   app.listen(port,()=>console.log(`Bhanu Visuals API running on http://localhost:${port}`))
 }
+
 
